@@ -1,0 +1,52 @@
+<div class="fixed-sidebar-left">
+    <ul class="nav navbar-nav side-nav nicescroll-bar">
+        <li class="navigation-header">
+            <a href="/">
+                        <span class="brand-text">
+                            <img style="height: 50px; " src="static/icon/logo3.png" alt="우아한 길"/></span>
+            </a>
+        </li>
+        <li {% if request.path=='/intro' %}class="active"{% endif %}>
+            <a href="{{ url_for('intro') }}">
+                <div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">소개</span></div>
+                <div class="pull-right"></div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+        <li {% if request.path=='/' %}class="active"{% endif %}>
+            <a href="{{ url_for('index') }}">
+                <div class="pull-left"><i class="ti-map-alt mr-20"></i><span class="right-nav-text">우아한길</span></div>
+                <div class="pull-right"></div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+        <li {% if request.path=='/data' %}class="active"{% endif %}>
+            <a href="{{ url_for('data') }}">
+                <div class="pull-left"><i class="ti-server mr-20"></i><span class="right-nav-text">데이터</span></div>
+                <div class="pull-right"></div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+        <li {% if request.path=='/gis' %}class="active"{% endif %}>
+            <a href="{{ url_for('gis') }}">
+                <div class="pull-left"><i class="ti-map mr-20"></i><span class="right-nav-text">구별 안전 관련 통계</span></div>
+                <div class="pull-right"></div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+         <li {% if request.path=='/eda' %}class="active"{% endif %}>
+            <a href="{{ url_for('eda') }}">
+                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">안전 관련 구별 통계</span></div>
+                <div class="pull-right"></div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+        <li {% if request.path=='/model' %}class="active"{% endif %}>
+            <a href="{{ url_for('model') }}">
+                <div class="pull-left"><i class="ti-bar-chart mr-20"></i><span class="right-nav-text">예측 모델 개발</span></div>
+                <div class="pull-right"></div>
+                <div class="clearfix"></div>
+            </a>
+        </li>
+    </ul>
+</div>

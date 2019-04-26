@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>우리아이 안전한 길</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="static/favicon.ico">
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/bttt.red.css">
+    <link rel="stylesheet" href="static/css/preloaders.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/ptjs.min.css">
+    <link rel="stylesheet" href="static/css/classic.min.css">
+    {%- block pre_style -%}{%- endblock pre_style -%}
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    {%- block post_style -%}{%- endblock post_style -%}
+    <script src="static/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () { // makes sure the whole site is loaded
+            var preloader = $('#mask div');
+            preloader.fadeOut(); // will first fade out the loading animation
+            $('#mask').delay(150).fadeOut('slow');
+            $('body').delay(150).css({'overflow': 'visible'});
+        })
+    </script>
+</head>
+<body class="is-bttt">
+<div id="mask">
+    <div id="dots5"><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="wrapper theme-2-active navbar-top-light">
+    {%- include 'nav.html' -%}
+    <div class="page-wrapper">
+{#        <a id="toggle_nav_btn" href="javascript:void(0);"><i class="ti-align-left"></i></a>#}
+        <div class="container">
+            {%- block content -%}{%- endblock content -%}
+        </div>
+    </div>
+    <a
+            id="back-to-the-top" class="back-to-the-top bttt-default bttt-positionRight "
+            data-animation="easeInOutQuart"
+            data-speed="1500"
+            data-offset="150">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+<script src="static/js/jquery-ui.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/jquery.slimscroll.js"></script>
+<script src="static/js/bttt.min.js"></script>
+<script src="static/js/scrollProgress.min.js"></script>
+<script src="static/js/clutch_widgets.js"></script>
+<script src="static/js/clutchWidgetsInit.js"></script>
+<script src="static/js/ptjs.min.js"></script>
+<script src="static/js/init.js"></script>
+<script>
+    $(function () {
+        $('body').scrollProgress({
+            position:
+                [
+                    {
+                        location: 'top',
+                        direction: 'left',
+                        size: 5
+                    }
+                ],
+            singleColor: '#ff936d'
+        });
+    })
+</script>
+{% block script %}{% endblock script %}
+</body>
+</html>
