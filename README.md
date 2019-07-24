@@ -7,9 +7,9 @@
 ## 사용한 기술
  - Flask(웹 페이지 구현), selenium(크롤링), python의 pandas 라이브러리(데이터 전처리), Tmap, sklearn, html, css, javascript
 
-[![Main](/image/소개.png)(메인페이지)
-[![Main](/image/소개2.png)(메인페이지)
-[![Main](/image/지도캡처1(위험).png)(메인페이지)
+[![Main](/image/소개.png)](메인페이지)
+[![Main](/image/소개2.png)](메인페이지)
+[![Main](/image/지도캡처1(위험).png)](메인페이지)
 
 `경찰서, 학교, CCTV 의 위치를 지도에 나타내줌.
 각각의 수를 볼 수 있으며, 머신러닝 모델을 통해 그 지역의 안전, 위험, 보통도 볼 수 있음.
