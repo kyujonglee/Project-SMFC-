@@ -1,5 +1,4 @@
 # SMFC
-## Safe map for Children
 
 <h1 align="center"> 👼Safe map for Children 👶</h1>
 <p>
